@@ -1,6 +1,8 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import { css, cx } from "@emotion/css";
 import Image from "next/image";
+import clientsMetrics from "../lib/clientsMetrics.json";
 
 function Home() {
   return (
@@ -45,31 +47,16 @@ function Home() {
         </div>
       </section>
 
-      <section className="p-10">
-        <p className="text-center text-gray-500">
+      <section className="container mx-auto p-10">
+        <p className="text-center text-gray-500 text-xl mb-8">
           WE’VE WORKED WITH SOME OF THE WORLD’S BEST COMPANIES
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 mt-5">
-          <Image src="/tef_logo.png" alt="tef_logo" width="100" height="100" />
-          <Image
-            src="/cex_logo.png"
-            alt="cex_logo"
-            width="100%"
-            height="100%"
-          />
-          <Image
-            src="/techpoint_africa_logo.png"
-            alt="techpoint_africa_logo"
-            width="100%"
-            height="100%"
-          />
-          <Image
-            src="/walletsxchange_logo.png"
-            alt="walletsxchange_logo"
-            width="100%"
-            height="100%"
-          />
+        <div className="grid place-items-center grid-cols-2 md:grid-cols-4 gap-16 mt-5">
+          <Image width="300rem" height="100rem" src="/tef_logo.png" alt="tef_logo" />
+          <Image width="300rem" height="100rem" src="/cex_logo.png" alt="cex_logo" />
+          <Image width="300rem" height="100rem" src="/techpoint_africa_logo.png" alt="techpoint_africa_logo" />
+          <Image width="300rem" height="100rem" src="/walletsxchange_logo.png" alt="walletsxchange_logo" />
         </div>
       </section>
 
@@ -82,7 +69,7 @@ function Home() {
         `)}
         `}
       >
-        <div className="container h-full">
+        <div className="container mx-auto h-full">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center h-full">
             <div>
               <p className="text-4xl font-bold mb-2 text-primary">
@@ -111,7 +98,7 @@ function Home() {
 
       <section
         className={`
-         container
+         mx-auto
           ${css(`
           background: url("/white-grey-gradient-background-with-waves_125540-820 1.png");
             `)}
@@ -120,8 +107,10 @@ function Home() {
         <div className="text-center pt-3 w-3/4 md:w-2/4 mx-auto">
           <p className="text-gray-500">WHAT WE DO</p>
           <p className="text-2xl font-light">
-            For your very specific industry, we have highly-tailored IT
-            solutions.
+            For your very specific industry,{" "}
+            <span className="text-primary">
+              we have highly-tailored IT solutions.
+            </span>
           </p>
         </div>
 
@@ -141,6 +130,7 @@ function Home() {
       <section
         className={`
          container
+         mx-auto
           ${css(`
             `)}
         `}
@@ -153,10 +143,10 @@ function Home() {
 
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mt-20">
           <div>
-            <p className="text-3xl">
-              Creative Storytelling. Fantastic Design.
+            <p className="text-3xl leading-relaxed">
+              Creative Storytelling. <br /> Fantastic Design. <br />
+              Invisible Technology.
             </p>
-            <p className="text-3xl">Invisible Technology.</p>
             <p className="text-base">
               By combining these essential elements, we build websites that
               focus on user experience, lead generation, and company reputation.
@@ -177,6 +167,7 @@ function Home() {
       <section
         className={`
          container
+         mx-auto
           ${css(`
             `)}
         `}
@@ -192,8 +183,10 @@ function Home() {
           </div>
 
           <div>
-            <p className="text-3xl">Memorable Design With The User in Mind</p>
-            <p className="text-3xl">UX and VISUAL DESIGN</p>
+            <p className="text-3xl leading-loose">
+              Memorable Design With The User in Mind
+            </p>
+            <p className="text-3xl py-2">UX and VISUAL DESIGN</p>
             <p className="text-base">
               By combining these essential elements, we build websites that
               focus on user experience, lead generation, and company reputation.
@@ -201,6 +194,159 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section
+        className=" container my-6
+         mx-auto"
+      >
+        <div className="text-center pt-16 w-3/4 md:w-2/4 mx-auto">
+          <p className="text-2xl font-light">HIRE US, WHY NOT?</p>
+          <div className="flex justify-center align-center mt-3">
+            <div
+              className={`border-2 border-gray-300 w-6 ${css(
+                `border-right: none`
+              )}`}
+            ></div>
+            <p className="text-2xl font-light">How we claim to excel?</p>
+            <div
+              className={`border-2 border-gray-300 w-6 ${css(
+                `border-left: none`
+              )}`}
+            ></div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center mt-5">
+          <figure className="bg-gray-100 rounded-xl p-8">
+            <Image
+              className="rounded mx-auto"
+              src="/agency.png"
+              alt="Bluart Managment System"
+              width="369"
+              height="287"
+            />
+            <div className="pt-4 text-center space-y-4">
+              <blockquote className="text-lg font-semibold">
+                <p className="text-light">Bluart Managment System</p>
+              </blockquote>
+              <p className="text-lg">
+                Our technical experts have a flair for developing clean-coded
+                websites based on customers’ needs, global guidelines and
+                trends.
+              </p>
+            </div>
+          </figure>
+
+          <figure className="bg-gray-100 rounded-xl p-8">
+            <Image
+              className="rounded mx-auto"
+              src="/agency2.png"
+              alt="Bluart Managment System"
+              width="369"
+              height="287"
+            />
+            <div className="pt-4 text-center space-y-4">
+              <blockquote className="text-lg font-semibold">
+                <p className="text-light">Efficient Database Security</p>
+              </blockquote>
+              <p className="text-lg">
+                Our technical experts have a flair for developing clean-coded
+                websites based on customers’ needs, global guidelines and
+                trends.
+              </p>
+            </div>
+          </figure>
+
+          <figure className="bg-gray-100 rounded-xl p-8">
+            <Image
+              className="rounded mx-auto"
+              src="/agency3.png"
+              alt="Bluart Managment System"
+              width="369"
+              height="287"
+            />
+            <div className="pt-4 text-center space-y-4">
+              <blockquote className="text-lg font-semibold">
+                <p className="text-light">Reliable Function Technology</p>
+              </blockquote>
+              <p className="text-lg">
+                Our technical experts have a flair for developing clean-coded
+                websites based on customers’ needs, global guidelines and
+                trends.
+              </p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        className={`
+          p-5
+          ${css(`
+          background: url("/metrics-bg.png");
+        `)}
+        `}
+      >
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 my-5 gap-4">
+            {clientsMetrics.slice(0, 4).map(({ data, metric, message }) => (
+              <div key={metric} className="text-center p-5 rounded bg-white">
+                <p className="text-primary text-lg">{message}</p>
+                <p className="text-primary text-4xl font-bold">{data}</p>
+                <p className="uppercase font-semibold text-lg text-gray-300">
+                  {metric}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className={`
+         bg-tertiary
+          ${css(`
+            `)}
+        `}
+      >
+        <div className="container mx-auto">
+          <div className="grid lg:place-items-end place-items-center items-center gap-8 grid-cols-1 md:grid-cols-2 my-12 md:my-32 lg:mx-36">
+            <div className="">
+              <p className="text-3xl leading-relaxed font-semibold">
+                Obtain further information by{" "}
+                <span className="text-primary">making a contact</span> with our
+                experienced IT staffs.
+              </p>
+              <p
+                className={`text-base leading-relaxed text-lg ${css(
+                  `maxWidth: 346px`
+                )}`}
+              >
+                We’re available for 12 hours a day! Contact to require a
+                detailed analysis and assessment of your project.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <Image
+                src="/phoneIcon.svg"
+                height="70px"
+                width="70px"
+                alt="global"
+              />
+              <p className="text-2xl">REACH OUT NOW!</p>
+              <p className="text-3xl  my-3 text-primary font-semibold">
+                +234 902 519 6509
+              </p>
+              <button className="bg-primary text-gray-300 rounded py-2 px-4">
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 }

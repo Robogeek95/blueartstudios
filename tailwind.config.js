@@ -15,6 +15,7 @@ module.exports = {
       light: "#5976F8",
       secondary: "#ffed4a",
       danger: "#e3342f",
+      tertiary: "#DCEAED"
     }),
     container: {
       padding: {
