@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { css, cx } from "@emotion/css";
 import Image from "next/image";
-import clientsMetrics from "../lib/clientsMetrics.json";
+import clientsMetrics from "../utilities/clientsMetrics.json";
 
 function Home() {
   return (
@@ -54,26 +54,26 @@ function Home() {
 
         <div className="grid place-items-center grid-cols-2 md:grid-cols-4 gap-16 mt-5">
           <Image
-            width="300rem"
-            height="100rem"
+            width="3rem"
+            height="1rem"
             src="/tef_logo.png"
             alt="tef_logo"
           />
           <Image
-            width="300rem"
-            height="100rem"
+            width="3rem"
+            height="1rem"
             src="/cex_logo.png"
             alt="cex_logo"
           />
           <Image
-            width="300rem"
-            height="100rem"
+            width="3rem"
+            height="1rem"
             src="/techpoint_africa_logo.png"
             alt="techpoint_africa_logo"
           />
           <Image
-            width="300rem"
-            height="100rem"
+            width="3rem"
+            height="1rem"
             src="/walletsxchange_logo.png"
             alt="walletsxchange_logo"
           />
