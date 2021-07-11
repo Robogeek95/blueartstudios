@@ -23,7 +23,7 @@ function Home() {
         <div className="flex h-full flex-col">
           <div className="flex flex-col justify-center items-center flex-grow w-3/5 mx-auto">
             <p className="text-xl uppercase text-light mb-3">
-              WE ARE HEROES OF
+              we are heroes of
             </p>
             <p className="text-3xl md:text-5xl uppercase font-semibold mb-2">
               Design, Development,and Identity for your Product.
@@ -53,10 +53,30 @@ function Home() {
         </p>
 
         <div className="grid place-items-center grid-cols-2 md:grid-cols-4 gap-16 mt-5">
-          <Image width="300rem" height="100rem" src="/tef_logo.png" alt="tef_logo" />
-          <Image width="300rem" height="100rem" src="/cex_logo.png" alt="cex_logo" />
-          <Image width="300rem" height="100rem" src="/techpoint_africa_logo.png" alt="techpoint_africa_logo" />
-          <Image width="300rem" height="100rem" src="/walletsxchange_logo.png" alt="walletsxchange_logo" />
+          <Image
+            width="300rem"
+            height="100rem"
+            src="/tef_logo.png"
+            alt="tef_logo"
+          />
+          <Image
+            width="300rem"
+            height="100rem"
+            src="/cex_logo.png"
+            alt="cex_logo"
+          />
+          <Image
+            width="300rem"
+            height="100rem"
+            src="/techpoint_africa_logo.png"
+            alt="techpoint_africa_logo"
+          />
+          <Image
+            width="300rem"
+            height="100rem"
+            src="/walletsxchange_logo.png"
+            alt="walletsxchange_logo"
+          />
         </div>
       </section>
 
