@@ -70,7 +70,7 @@ function Home() {
         `}
       >
         <div className="container mx-auto h-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center h-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center h-full px-20">
             <div>
               <p className="text-4xl font-bold mb-2 text-primary">
                 Not all website are built equally{" "}
