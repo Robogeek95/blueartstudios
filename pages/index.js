@@ -53,30 +53,10 @@ function Home() {
         </p>
 
         <div className="grid place-items-center grid-cols-2 md:grid-cols-4 gap-16 mt-5">
-          <Image
-            width="3rem"
-            height="1rem"
-            src="/tef_logo.png"
-            alt="tef_logo"
-          />
-          <Image
-            width="3rem"
-            height="1rem"
-            src="/cex_logo.png"
-            alt="cex_logo"
-          />
-          <Image
-            width="3rem"
-            height="1rem"
-            src="/techpoint_africa_logo.png"
-            alt="techpoint_africa_logo"
-          />
-          <Image
-            width="3rem"
-            height="1rem"
-            src="/walletsxchange_logo.png"
-            alt="walletsxchange_logo"
-          />
+          <img src="/tef_logo.png" alt="tef_logo" />
+          <img src="/cex_logo.png" alt="cex_logo" />
+          <img src="/techpoint_africa_logo.png" alt="techpoint_africa_logo" />
+          <img src="/walletsxchange_logo.png" alt="walletsxchange_logo" />
         </div>
       </section>
 
@@ -90,10 +70,10 @@ function Home() {
         `}
       >
         <div className="container mx-auto h-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center h-full px-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center h-full px-0 lg:px-20">
             <div>
               <p className="text-4xl font-bold mb-2 text-primary">
-                Not all website are built equally{" "}
+                Not all website are built equally
               </p>
               <p className="text-base mb-1">
                 A Highly Tailored IT Design, Management & Support Firm focused
@@ -105,12 +85,7 @@ function Home() {
             </div>
 
             <div className="h-full w-full">
-              <Image
-                src="/man-ipad.png"
-                height="753px"
-                width="636px"
-                alt="happy client"
-              />
+              <img src="/man-ipad.png" alt="happy client" />
             </div>
           </div>
         </div>
@@ -137,12 +112,7 @@ function Home() {
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mt-12">
           <div></div>
           <div className="hidden md:block">
-            <Image
-              src="/globe2.png"
-              height="580px"
-              width="618px"
-              alt="global"
-            />
+            <img src="/globe2.png" alt="global" />
           </div>
         </div>
       </section>
@@ -161,7 +131,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mt-20">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mt-8 lg:mt-20">
           <div>
             <p className="text-3xl leading-relaxed">
               Creative Storytelling. <br /> Fantastic Design. <br />
@@ -174,12 +144,7 @@ function Home() {
           </div>
 
           <div>
-            <Image
-              src="/image1.png"
-              height="580px"
-              width="618px"
-              alt="global"
-            />
+            <img src="/image1.png" alt="global" />
           </div>
         </div>
       </section>
@@ -194,12 +159,7 @@ function Home() {
       >
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mt-20">
           <div>
-            <Image
-              src="/image2.png"
-              height="580px"
-              width="618px"
-              alt="global"
-            />
+            <img src="/image2.png" alt="global" />
           </div>
 
           <div>
@@ -238,12 +198,10 @@ function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center mt-5">
           <figure className="bg-gray-100 rounded-xl p-8">
-            <Image
+            <img
               className="rounded mx-auto"
               src="/agency.png"
               alt="Bluart Managment System"
-              width="369"
-              height="287"
             />
             <div className="pt-4 text-center space-y-4">
               <blockquote className="text-lg font-semibold">
@@ -278,12 +236,10 @@ function Home() {
           </figure>
 
           <figure className="bg-gray-100 rounded-xl p-8">
-            <Image
+            <img
               className="rounded mx-auto"
               src="/agency3.png"
               alt="Bluart Managment System"
-              width="369"
-              height="287"
             />
             <div className="pt-4 text-center space-y-4">
               <blockquote className="text-lg font-semibold">
@@ -348,12 +304,7 @@ function Home() {
             </div>
 
             <div className="text-center">
-              <Image
-                src="/phoneIcon.svg"
-                height="70px"
-                width="70px"
-                alt="global"
-              />
+              <img src="/phoneIcon.svg" alt="global"  className="mx-auto mb-4"/>
               <p className="text-2xl">REACH OUT NOW!</p>
               <p className="text-3xl  my-3 text-primary font-semibold">
                 +234 902 519 6509
