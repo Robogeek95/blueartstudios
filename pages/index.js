@@ -2,7 +2,8 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { css, cx } from "@emotion/css";
 import Image from "next/image";
-import clientsMetrics from "../utilities/clientsMetrics.json";
+import Metrics from "../components/metrics";
+import ReachOut from "../components/reachout";
 
 function Home() {
   return (
@@ -255,67 +256,9 @@ function Home() {
         </div>
       </section>
 
-      <section
-        className={`
-          p-5
-          ${css(`
-          background: url("/metrics-bg.png");
-        `)}
-        `}
-      >
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 my-5 gap-4">
-            {clientsMetrics.slice(0, 4).map(({ data, metric, message }) => (
-              <div key={metric} className="text-center p-5 rounded bg-white">
-                <p className="text-primary text-lg">{message}</p>
-                <p className="text-primary text-4xl font-bold">{data}</p>
-                <p className="uppercase font-semibold text-lg text-gray-300">
-                  {metric}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Metrics />
 
-      <section
-        className={`
-         bg-tertiary
-          ${css(`
-            `)}
-        `}
-      >
-        <div className="container mx-auto">
-          <div className="grid lg:place-items-end place-items-center items-center gap-8 grid-cols-1 md:grid-cols-2 my-12 md:my-32 lg:mx-36">
-            <div className="">
-              <p className="text-3xl leading-relaxed font-semibold">
-                Obtain further information by{" "}
-                <span className="text-primary">making a contact</span> with our
-                experienced IT staffs.
-              </p>
-              <p
-                className={`text-base leading-relaxed text-lg ${css(
-                  `maxWidth: 346px`
-                )}`}
-              >
-                We’re available for 12 hours a day! Contact to require a
-                detailed analysis and assessment of your project.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <img src="/phoneIcon.svg" alt="global"  className="mx-auto mb-4"/>
-              <p className="text-2xl">REACH OUT NOW!</p>
-              <p className="text-3xl  my-3 text-primary font-semibold">
-                +234 902 519 6509
-              </p>
-              <button className="bg-primary text-gray-300 rounded py-2 px-4">
-                Contact us
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ReachOut />
 
       <Footer />
     </>

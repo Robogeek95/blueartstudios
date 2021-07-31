@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
   const [expand, setExpand] = useState(false);
@@ -17,12 +18,7 @@ function Navbar() {
           />
           {/* links */}
           <div className="hidden md:flex flex flex-row gap-5 items-center">
-            <div>About</div>
-            <div>Services</div>
-            <div>Clients</div>
-            <button className="bg-primary text-gray-300 rounded py-2 px-4">
-              Let&apos;s talk
-            </button>
+            <NavContent />
           </div>
 
           <button
@@ -62,16 +58,26 @@ function Navbar() {
         </div>
         {expand && (
           <div className="mt-5 flex flex-col gap-5 items-center">
-            <div>About</div>
-            <div>Services</div>
-            <div>Clients</div>
-            <button className="bg-primary text-gray-300 rounded py-2 px-4">
-              Let&apos;s talk
-            </button>
+            <NavContent />
           </div>
         )}
       </div>
     </div>
+  );
+}
+
+function NavContent() {
+  return (
+    <>
+      <div>
+        <Link href="/about">About</Link>
+      </div>
+      <div>Services</div>
+      <div>Clients</div>
+      <button className="bg-primary text-gray-300 rounded py-2 px-4">
+        Let&apos;s talk
+      </button>
+    </>
   );
 }
 
