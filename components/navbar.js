@@ -72,7 +72,9 @@ function NavContent() {
       <div>
         <Link href="/about">About</Link>
       </div>
-      <div>Services</div>
+      <div>
+        <Link href="/services">Services</Link>
+      </div>
       <div>Clients</div>
       <button className="bg-primary text-gray-300 rounded py-2 px-4">
         Let&apos;s talk
