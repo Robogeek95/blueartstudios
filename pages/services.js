@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import CockTailTab from "../components/CockTailTab";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
@@ -39,9 +40,9 @@ function ServicesPage() {
       </header>
 
       <section className="container mx-auto">
-        <div className="grid grid-cols-2  gap-5 items-center mt-12">
-          <div>
-            <p className="text-4xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-5  mt-12">
+          <div className="order-2 lg:order-1">
+            <p className="text-4xl mb-5">
               Branding has never been more{" "}
               <span className="text-primary">expansive</span>,{" "}
               <span className="text-primary">adventurous</span> and agile than
@@ -56,29 +57,29 @@ function ServicesPage() {
             </p>
           </div>
 
-          <div>
+          <div className="order-1 lg:order-2">
             <img src="/service1.png" alt="" />
           </div>
         </div>
 
-        <div className="grid grid-cols-2  gap-5 items-center mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-5 mt-12">
           <div>
             <img src="/service1.png" alt="" />
           </div>
 
           <div>
-            <p className="text-4xl">
-              Branding has never been more{" "}
-              <span className="text-primary">expansive</span>,{" "}
-              <span className="text-primary">adventurous</span> and agile than
-              it is today
+            <p className="text-4xl mb-5">
+              Our seasoned <span className="primary">brandtenders</span> are
+              always stirring up something refreshing.
             </p>
             <p className="text-2xl">
-              Its touch-points are constantly spilling over into new ways to
-              engage with your audience. Nowadays, a brand voice can literally
-              mean a brand voice (we’re talking to you Siri and Alexa). Your
-              once sacred, brand guideline protected logo can now shapeshift
-              into a new wordmark every day.
+              And with these ever-evolving brand parameters, you need to tap
+              into a resource that knows how to adapt to it all. With the aim
+              not to keep up, but to lead. That’s where we come in. Mixing an
+              inviting concoction of sound strategic insights with a generous
+              splash of creativity to serve up a potent brand ecosystem that
+              increases the value of your company, motivates your workforce and
+              quenches customers’ thirst for your product.
             </p>
           </div>
         </div>
@@ -94,14 +95,16 @@ function ServicesPage() {
 
       <section>
         <div className="py-9">
-          <p className="text-primary text-center text-4xl">
+          <p className="text-primary text-center text-4xl mb-20">
             signature cocktail menu
           </p>
+
+          <CockTailTab />
         </div>
       </section>
 
       <section className="container mx-auto mb-10">
-        <div className="grid grid-cols-2 gap-10 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
           <div>
             <img src="/service3.png" alt="" />
           </div>
@@ -116,8 +119,11 @@ function ServicesPage() {
               and unique offerings that already exist.
             </p>
 
-            <button className="py-3 px-4 bg-primary rounded text-white mt-4 rounded">
-              Talk to a brandtender
+            <button
+              className="bg-primary mt-4 text-white active:bg-lightBlue-600 font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button"
+            >
+              Regular
             </button>
           </div>
         </div>
