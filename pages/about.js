@@ -8,51 +8,8 @@ import StarIcon from "../components/icons/star-icon";
 import Metrics from "../components/metrics";
 import Navbar from "../components/navbar";
 import ReachOut from "../components/reachout";
-
-const faqs = [
-  {
-    question: "How can we help your business?",
-    answer:
-      "Through the collaboration with customers in discussing needs and demand, we're able to attain mutual understanding, gain customer trust to offer appropriate advice, and bring about suggestions on suitable technology to transform your business.F",
-  },
-  {
-    question: "What are the merit of Bluartstudio?",
-    answer:
-      "Through the collaboration with customers in discussing needs and demand, we're able to attain mutual understanding, gain customer trust to offer appropriate advice, and bring about suggestions on suitable technology to transform your business.F",
-  },
-  {
-    question: "How working process is simplified?",
-    answer:
-      "Through the collaboration with customers in discussing needs and demand, we're able to attain mutual understanding, gain customer trust to offer appropriate advice, and bring about suggestions on suitable technology to transform your business.F",
-  },
-];
-
-const solutions = [
-  {
-    name: "Warranty Management IT",
-    desc: "",
-  },
-  {
-    name: "Quality Control System",
-    desc: "It's more than a responsibility but a guarantee from us to gain customer trust with highly reliable quality control system.",
-  },
-  {
-    name: "Quality Control System",
-    desc: "It's more than a responsibility but a guarantee from us to gain customer trust with highly reliable quality control system.",
-  },
-  {
-    name: "Highly Professional Staffs",
-    desc: "Our service offerings enhance customer experience throughout secure & highly functional end-to-end warranty management.",
-  },
-  {
-    name: "Infrastructure Integration Technology",
-    desc: "It's more than a responsibility but a guarantee from us to gain customer trust with highly reliable quality control system.",
-  },
-  {
-    name: "Information Security Management",
-    desc: "It's more than a responsibility but a guarantee from us to gain customer trust with highly reliable quality control system.",
-  },
-];
+import faqs from "../utilities/faqs.json";
+import solutions from "../utilities/solutions.json";
 
 function About() {
   return (
@@ -108,7 +65,7 @@ function About() {
                 <span
                   className="text-primary text-9xl font-semibold"
                   // style={{ fontSize: "288px" }}
-                >     
+                >
                   08
                 </span>
                 <span className="text-gray-400">
