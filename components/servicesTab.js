@@ -1,6 +1,6 @@
 import React from "react";
 
-const CockTailTab = () => {
+const ServicesTab = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
@@ -137,4 +137,4 @@ const CockTailTab = () => {
   );
 };
 
-export default CockTailTab;
+export default ServicesTab;
