@@ -1,5 +1,5 @@
 import { css } from "@emotion/css";
-import CockTailTab from "../components/CockTailTab";
+import CockTailTab from "../components/cockTailTab";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
