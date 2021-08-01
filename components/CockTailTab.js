@@ -1,6 +1,6 @@
 import React from "react";
 
-const CockTailTab = ({ color }) => {
+const CockTailTab = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
