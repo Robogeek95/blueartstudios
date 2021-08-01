@@ -10,12 +10,17 @@ function Navbar() {
       <div className="container mx-auto py-5">
         <div className="flex justify-between items-center">
           {/* logo */}
-          <Image
-            src="/blueartstudio.svg"
-            width="161px"
-            height="24px"
-            alt="blueartstudios logo"
-          />
+          <Link href="/">
+            <a className="transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transform">
+              <Image
+                src="/blueartstudio.svg"
+                width="161px"
+                height="24px"
+                alt="blueartstudios logo"
+              />
+            </a>
+          </Link>
+
           {/* links */}
           <div className="hidden md:flex flex flex-row gap-5 items-center">
             <NavContent />
@@ -69,14 +74,16 @@ function Navbar() {
 function NavContent() {
   return (
     <>
-      <div>
+      <div className=" transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transform">
         <Link href="/about">About</Link>
       </div>
-      <div>
+      <div className=" transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transform">
         <Link href="/services">Services</Link>
       </div>
-      <div>Clients</div>
-      <button className="bg-primary text-gray-300 rounded py-2 px-4">
+      <div className=" transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transform">
+        Clients
+      </div>
+      <button className="bg-primary text-gray-300 rounded py-2 px-4 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 transform">
         Let&apos;s talk
       </button>
     </>

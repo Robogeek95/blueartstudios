@@ -6,7 +6,7 @@ const CockTailTab = ({ color }) => {
     <>
       <div className="flex flex-wrap container mx-auto">
         <div className="w-full">
-          <div className="relative overflow-scroll">
+          <div className="relative">
             <ul
               className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
               role="tablist"

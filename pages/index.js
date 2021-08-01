@@ -23,7 +23,7 @@ function Home() {
       >
         <div className="flex h-full flex-col">
           <div className="flex flex-col justify-center items-center flex-grow w-3/5 mx-auto">
-            <p className="text-xl uppercase text-light mb-3">
+            <p className="text-xl uppercase text-light mb-3 animate-pulse">
               we are heroes of
             </p>
             <p className="text-3xl md:text-5xl uppercase font-semibold mb-2">
@@ -80,7 +80,7 @@ function Home() {
                 A Highly Tailored IT Design, Management & Support Firm focused
                 on helping clients maximise value from their digtal marketing.
               </p>
-              <button className="bg-primary text-gray-300 rounded py-2 px-4">
+              <button className="bg-primary text-gray-300 rounded py-2 px-4 transition duration-300 ease-in-out hover:translate-y-1 hover:scale-110 transform">
                 Let&apos;s talk
               </button>
             </div>
@@ -198,7 +198,7 @@ function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center justify-items-center mt-5">
-          <figure className="bg-gray-100 rounded-xl p-8">
+          <figure className="bg-gray-100 rounded-xl p-8 transition duration-300 ease-in-out hover:translate-y-1 hover:scale-110 transform cursor-pointer">
             <img
               className="rounded mx-auto"
               src="/agency.png"
@@ -216,7 +216,7 @@ function Home() {
             </div>
           </figure>
 
-          <figure className="bg-gray-100 rounded-xl p-8">
+          <figure className="bg-gray-100 rounded-xl p-8 transition duration-300 ease-in-out hover:translate-y-1 hover:scale-110 transform cursor-pointer">
             <Image
               className="rounded mx-auto"
               src="/agency2.png"
@@ -236,7 +236,7 @@ function Home() {
             </div>
           </figure>
 
-          <figure className="bg-gray-100 rounded-xl p-8">
+          <figure className="bg-gray-100 rounded-xl p-8 transition duration-300 ease-in-out hover:translate-y-1 hover:scale-110 transform cursor-pointer">
             <img
               className="rounded mx-auto"
               src="/agency3.png"
